@@ -16,6 +16,11 @@ body{
     width: 150px;
     height: 90px;
 }
+.hamburger img{
+    display: none;
+    width: 25px;
+    height: 25px;
+}
 .nav ul{
     display: flex;
     gap: 1.5rem;
