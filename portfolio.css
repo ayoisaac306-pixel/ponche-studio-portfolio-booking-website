@@ -51,3 +51,53 @@ body{
     height: auto;
     object-fit: fill;
 }
+.footer{
+    width: 100;
+    margin-top: 2rem;
+    background: rgb(245, 242, 242);
+    padding: 30px 40px;
+    display: flex;
+    background-image: url(./Assets/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+}
+.footer div{
+    flex: 1;
+}
+.card-1 ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+.card-1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+.card-1 ul li a:hover{
+    color: #ffd700;
+}
+.card-2 ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+.card-2 ul li a{
+   color: black;
+   transition: transform 0.3s ease;
+}
+.card-2 ul li a i:hover{
+    transform: scale(1.1);
+}
+.card-3 p{
+    margin-top: 8rem;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: rgb(109, 107, 107);
+}

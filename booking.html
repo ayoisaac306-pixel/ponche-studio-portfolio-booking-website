@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking form</title>
+    <link rel="stylesheet" href="./booking.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <div class="nav">
+      <a href=""><button>Contact</button></a>
+      <div class="hamburger">
+        <img src="./Assets/icon-hamburger.svg" alt="" />
+      </div>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href=".booking.html">Book me</a></li>
+        <li><a href="./portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+
+    <!-- Second container-->
+    <div class="container">
+      <div class="top-section">
+        <h2>We frame you the way epics frame their icons.</h2>
+        <p>Book a session with Ponche using the form below</p>
+      </div>
+
+      <!-- Form -->
+      <form action="/submit-form" method="post" id="myForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" />
+        <p class="error" id="nameError" style="color:red"></p>
+
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" />
+        <p class="error" id="emailError" style="color:red"></p>
+
+
+        <label for="phone">Your Phone Number</label>
+        <input type="tel" id="phone" name="phone" />
+        <p class="error" id="phoneError" style="color:red"></p>
+
+
+
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" />
+         <p class="error" id="locationError" style="color:red"></p>
+            <label>What Kind of Shoot</label>
+        <input type="checkbox" id="wedding" name="shoot" value="wedding" />
+        <label for="wedding">Wedding</label><br />
+
+        <input type="checkbox" id="lifestyle" name="shoot" value="lifestyle" />
+        <label for="lifestyle">Lifestyle</label><br />
+
+        <input type="checkbox" id="other" name="shoot" value="other" />
+        <label for="other">Other Event</label><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <!-- first card -->
+      <div class="card-1">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href=".booking.html">Book me</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+      <!-- second card -->
+      <div class="card-2">
+        <ul>
+          <li>
+            <a href="https://x.com/director_ponche?s=21"
+              ><i class="bxl bx-twitter-x" style="font-size: 1rem"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/big.ponche?igsh=MWN1N3NqaDU2YWY1MQ%3D%3D&utm_source=qr"
+              ><i class="bxl bx-instagram-alt" style="font-size: 1rem"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@ponche.yn?_r=1&_t=ZS-91I1nIezLVd"
+              ><i
+                class="bxl bx-tiktok"
+                style="font-size: 1rem; color: black"
+              ></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Third card -->
+      <div class="card-3"><p>&copy; 2025 Ponche. All rights reserved</p></div>
+    </footer>
+    <script src="./booking.js"></script>
+  </body>
+</html>

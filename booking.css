@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Inter", sans-serif;
+}
+.nav{
+    background-color:inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: top 0.3s ease;
+}
+.hamburger img{
+    display: none;
+    width: 25px;
+    height: 25px;
+}
+.nav ul{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #eed234;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+.nav ul li a:hover{
+    color: black;
+}
+.nav a button{
+    border: none;
+    padding: .5rem 1.5rem;
+    background: #eed234;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: background-color 0.5s ease;
+}
+.nav a button:hover{
+    background: black;
+}
+.form label{
+    width: 100%;
+}
+.container{
+    width: 90%;
+    margin: 2rem auto;
+}
+.top-section h2{
+    font-family: "Inter", sans-serif;
+    text-transform: capitalize;
+     font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.top-section p{
+    font-family: "Inter", sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/* Form container */
+form {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Text, email, tel inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Checkbox container */
+form input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+/* Submit button */
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Spacing for checkboxes */
+form label[for="wedding"],
+form label[for="lifestyle"],
+form label[for="other"] {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #555;
+}
+.footer{
+    width: 100;
+    margin-top: 2rem;
+    background: rgb(245, 242, 242);
+    padding: 30px 40px;
+    display: flex;
+    background-image: url(./Assets/bg-pattern-footer-mobile.svg);
+    background-repeat: no-repeat;
+}
+.footer div{
+    flex: 1;
+}
+.card-1 ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+.card-1 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+.card-1 ul li a:hover{
+    color: #ffd700;
+}
+.card-2 ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+.card-2 ul li a{
+   color: black;
+   transition: transform 0.3s ease;
+}
+.card-2 ul li a i:hover{
+    transform: scale(1.1);
+}
+.card-3 p{
+    margin-top: 8rem;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: rgb(109, 107, 107);
+}
