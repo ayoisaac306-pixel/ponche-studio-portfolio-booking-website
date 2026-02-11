@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="5;url=/index.html" />
+    <title>Thanks for Booking</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 100px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+    <!-- Option 1: Use meta refresh -->
+    <meta http-equiv="refresh" content="5;url=/" />
+</head>
+<body>
+    <h1>Thank you for your booking!</h1>
+    <p>You will be redirected to the home page in 5 seconds.</p>
+
+    <!-- Option 2: Use JS redirect -->
+    <script>
+        setTimeout(function() {
+            window.location.href = "/";  // change "/" to your home page URL if different
+        }, 5000); // 5000ms = 5 seconds
+    </script>
+</body>
+</html>

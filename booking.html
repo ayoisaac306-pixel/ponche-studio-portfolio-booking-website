@@ -37,39 +37,38 @@
         <p>Book a session with Ponche using the form below</p>
       </div>
 
-      <!-- Form -->
-      <form action="/submit-form" method="post" id="myForm">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" />
-        <p class="error" id="nameError" style="color:red"></p>
+   <form action="/submit-booking/" method="post" id="myForm">
+    {% csrf_token %}
+    <label for="full_name">Your Name</label>
+    <input type="text" id="full_name" name="full_name">
+    <p class="error" id="nameError" style="color:red"></p>
+
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email">
+    <p class="error" id="emailError" style="color:red"></p>
+
+    <label for="phone">Your Phone Number</label>
+    <input type="tel" id="phone" name="phone">
+    <p class="error" id="phoneError" style="color:red"></p>
+
+    <label for="location">Location</label>
+    <input type="text" id="location" name="location">
+    <p class="error" id="locationError" style="color:red"></p>
+
+    <label>What Kind of Shoot</label>
+    <input type="checkbox" id="wedding" name="shoot_type" value="wedding">
+    <label for="wedding">Wedding</label><br>
+
+    <input type="checkbox" id="lifestyle" name="shoot_type" value="lifestyle">
+    <label for="lifestyle">Lifestyle</label><br>
+
+    <input type="checkbox" id="other" name="shoot_type" value="other">
+    <label for="other">Other Event</label><br>
+
+    <input type="submit" value="Submit">
+</form>
 
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" />
-        <p class="error" id="emailError" style="color:red"></p>
-
-
-        <label for="phone">Your Phone Number</label>
-        <input type="tel" id="phone" name="phone" />
-        <p class="error" id="phoneError" style="color:red"></p>
-
-
-
-        <label for="location">Location</label>
-        <input type="text" id="location" name="location" />
-         <p class="error" id="locationError" style="color:red"></p>
-            <label>What Kind of Shoot</label>
-        <input type="checkbox" id="wedding" name="shoot" value="wedding" />
-        <label for="wedding">Wedding</label><br />
-
-        <input type="checkbox" id="lifestyle" name="shoot" value="lifestyle" />
-        <label for="lifestyle">Lifestyle</label><br />
-
-        <input type="checkbox" id="other" name="shoot" value="other" />
-        <label for="other">Other Event</label><br />
-
-        <input type="submit" value="Submit" />
-      </form>
     </div>
 
     <!-- footer -->

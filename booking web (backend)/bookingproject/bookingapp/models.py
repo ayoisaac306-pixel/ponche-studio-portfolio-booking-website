@@ -8,12 +8,7 @@ class Booking(models.Model):
     location = models.CharField(max_length=255)
     phone = models.CharField(max_length=20)
     date = models.DateField(blank=True)
-    SHOOT_TYPES = [
-        ("wedding", "Wedding"),
-        ("lifestyle", "Lifestyle"),
-        ("other", "Other Shoot"),
-    ]
-    shoot_type = models.CharField(max_length=20, choices=SHOOT_TYPES)
+    shoot_type = models.CharField(max_length=100)
 
     def __str__(self):
         return f'{self.full_name} | {self.date} | {self.shoot_type}'

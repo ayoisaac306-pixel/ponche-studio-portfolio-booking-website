@@ -12,8 +12,8 @@ window.addEventListener("scroll", () => {
     lastScrollY = window.scrollY;
 });
 
-var form = document.getElementById("myForm")
-var nameInput = document.getElementById("name");
+var form = document.getElementById("myForm");
+var nameInput = document.getElementById("full_name");
 var emailInput = document.getElementById("email");
 var phoneInput = document.getElementById("phone");
 var locationInput = document.getElementById("location");
@@ -24,8 +24,7 @@ var phoneError = document.getElementById("phoneError");
 var locationError = document.getElementById("locationError");
 
 form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
+    // Reset errors
     nameError.textContent = "";
     emailError.textContent = "";
     phoneError.textContent = "";
@@ -37,7 +36,7 @@ form.addEventListener("submit", function(event) {
         nameError.textContent = "Name is required.";
         isValid = false;
     }
-    // Validate email
+
     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailInput.value.trim() === "") {
         emailError.textContent = "Email is required.";
@@ -47,7 +46,6 @@ form.addEventListener("submit", function(event) {
         isValid = false;
     }
 
-    // Validate phone
     var phonePattern = /^\d{10,}$/;
     if (phoneInput.value.trim() === "") {
         phoneError.textContent = "Phone number is required.";
@@ -57,14 +55,15 @@ form.addEventListener("submit", function(event) {
         isValid = false;
     }
 
-    // Validate location
     if (locationInput.value.trim() === "") {
         locationError.textContent = "Location is required.";
         isValid = false;
     }
 
-    // If all valid, submit form
-    if (isValid) {
-        alert("Form submitted successfully!");
+    // If form is invalid, stop submission
+    if (!isValid) {
+        event.preventDefault();  // only prevent if invalid
     }
 });
+
+
